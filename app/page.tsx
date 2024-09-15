@@ -1,7 +1,11 @@
+import Navbar from "@/components/Navbar";
+import Profile from "@/components/Profile";
+
 export default function Home() {
   return (
     <>
-      <p className="text-center text-cyan-300">Hello World</p>
+      <Navbar />
+      <Profile />
     </>
   );
 }
