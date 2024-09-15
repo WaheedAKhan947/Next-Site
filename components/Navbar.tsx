@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <nav className="bg-black-800 text-white p-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Waheed`s CV</h1>
+        <Link href="/" className="text-2xl font-bold">Waheed`s CV</Link>
 
         {/* Hamburger button for small screens */}
         <button
@@ -26,24 +26,24 @@ export default function Navbar() {
 
         {/* Links - shown on larger screens */}
         <div className="hidden md:flex space-x-4">
+          <Link href="/education">
+            <Button variant="outline" className="text-white">
+              Education
+            </Button>
+          </Link>
           <Link href="/experience">
             <Button variant="outline" className="text-white">
-              Experience
+            Experience
             </Button>
           </Link>
-          <Link href="/skills">
+          <Link href="/projects">
             <Button variant="outline" className="text-white">
-              Skills
+              Projects
             </Button>
           </Link>
-          <Link href="/portfolio">
+          <Link href="/blogs">
             <Button variant="outline" className="text-white">
-              Portfolio
-            </Button>
-          </Link>
-          <Link href="/testimonials">
-            <Button variant="outline" className="text-white">
-              Testimonials
+              Blogs
             </Button>
           </Link>
           <Link href="/contact">
