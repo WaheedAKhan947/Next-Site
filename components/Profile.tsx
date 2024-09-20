@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import ProfilePic from "@/assets/home/waheedDp.jpg"
+import ProfilePic from "@/assets/home/waheedDp-removebg.png"
 
 export default function Profile() {
   return (

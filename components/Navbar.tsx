@@ -1,8 +1,8 @@
-"use client"
-import { useState } from 'react';
-import Link from 'next/link';
-import { Button } from '@/components/ui/button'; // Assuming you're using ShadCN's UI button component
-import { Menu } from 'lucide-react'; // Lucide-react for icons
+"use client";
+import { useState } from "react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button"; // Assuming you're using ShadCN's UI button component
+import { X ,Menu } from "lucide-react"; // Lucide-react for icons
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,14 +14,20 @@ export default function Navbar() {
   return (
     <nav className="bg-black-800 text-white p-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold">Waheed`s CV</Link>
+        <Link href="/" className="text-2xl font-bold">
+          Waheed`s CV
+        </Link>
 
         {/* Hamburger button for small screens */}
         <button
           className="block md:hidden focus:outline-none"
           onClick={toggleMenu}
         >
-          <Menu className="text-white h-8 w-8" />
+          {isOpen ? (
+            <X className="text-white h-8 w-8" /> // Show X when the menu is open
+          ) : (
+            <Menu className="text-white h-8 w-8" /> // Show Menu when the menu is closed
+          )}
         </button>
 
         {/* Links - shown on larger screens */}
@@ -33,7 +39,7 @@ export default function Navbar() {
           </Link>
           <Link href="/experience">
             <Button variant="outline" className="text-white">
-            Experience
+              Experience
             </Button>
           </Link>
           <Link href="/projects">
@@ -56,21 +62,31 @@ export default function Navbar() {
 
       {/* Dropdown menu for small screens */}
       {isOpen && (
-        <div className="md:hidden bg-black-700 text-white space-y-4 p-4">
+        <div className="md:hidden flex flex-col gap-3 bg-black-700 text-white space-y-4 p-4">
+          <Link href="/education" onClick={toggleMenu}>
+            <Button variant="outline" className="text-white w-full text-left">
+              Education
+            </Button>
+          </Link>
           <Link href="/experience" onClick={toggleMenu}>
-            Experience
+            <Button variant="outline" className="text-white w-full text-left">
+              Experience
+            </Button>
           </Link>
-          <Link href="/skills" onClick={toggleMenu}>
-            Skills
+          <Link href="/projects" onClick={toggleMenu}>
+            <Button variant="outline" className="text-white w-full text-left">
+              Projects
+            </Button>
           </Link>
-          <Link href="/portfolio" onClick={toggleMenu}>
-            Portfolio
-          </Link>
-          <Link href="/testimonials" onClick={toggleMenu}>
-            Testimonials
+          <Link href="/blogs" onClick={toggleMenu}>
+            <Button variant="outline" className="text-white w-full text-left">
+              Blogs
+            </Button>
           </Link>
           <Link href="/contact" onClick={toggleMenu}>
-            Contact
+            <Button variant="outline" className="text-white w-full text-left">
+              Contact
+            </Button>
           </Link>
         </div>
       )}
