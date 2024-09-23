@@ -33,27 +33,27 @@ export default function Navbar() {
         {/* Links - shown on larger screens */}
         <div className="hidden md:flex space-x-4">
           <Link href="/education">
-            <Button variant="outline" className="text-white">
+            <Button variant="outline" size="sm" className="text-white">
               Education
             </Button>
           </Link>
           <Link href="/experience">
-            <Button variant="outline" className="text-white">
+            <Button variant="outline" size="sm" className="text-white">
               Experience
             </Button>
           </Link>
           <Link href="/projects">
-            <Button variant="outline" className="text-white">
+            <Button variant="outline" size="sm" className="text-white">
               Projects
             </Button>
           </Link>
           <Link href="/blogs">
-            <Button variant="outline" className="text-white">
+            <Button variant="outline" size="sm" className="text-white">
               Blogs
             </Button>
           </Link>
           <Link href="/contact">
-            <Button variant="outline" className="text-white">
+            <Button variant="outline" size="sm" className="text-white">
               Contact
             </Button>
           </Link>
@@ -64,27 +64,27 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden flex flex-col gap-3 bg-black-700 text-white space-y-4 p-4">
           <Link href="/education" onClick={toggleMenu}>
-            <Button variant="outline" className="text-white w-full text-left">
+            <Button variant="outline" size="sm" className="text-white w-full text-left">
               Education
             </Button>
           </Link>
           <Link href="/experience" onClick={toggleMenu}>
-            <Button variant="outline" className="text-white w-full text-left">
+            <Button variant="outline" size="sm" className="text-white w-full text-left">
               Experience
             </Button>
           </Link>
           <Link href="/projects" onClick={toggleMenu}>
-            <Button variant="outline" className="text-white w-full text-left">
+            <Button variant="outline" size="sm" className="text-white w-full text-left">
               Projects
             </Button>
           </Link>
           <Link href="/blogs" onClick={toggleMenu}>
-            <Button variant="outline" className="text-white w-full text-left">
+            <Button variant="outline" size="sm" className="text-white w-full text-left">
               Blogs
             </Button>
           </Link>
           <Link href="/contact" onClick={toggleMenu}>
-            <Button variant="outline" className="text-white w-full text-left">
+            <Button variant="outline" size="sm" className="text-white w-full text-left">
               Contact
             </Button>
           </Link>
