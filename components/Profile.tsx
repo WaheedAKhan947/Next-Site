@@ -14,7 +14,7 @@ import { IoLogoJavascript } from "react-icons/io5";
 
 export default function Profile() {
   return (
-    <section className="bg-[#f8f3ee] min-h-screen p-10 flex justify-center items-center">
+    <section className="min-h-screen p-10 flex justify-center items-center">
       <div className="container mx-auto">
         {/* <div className="text-center mb-10">
           <h1 className="text-4xl font-bold text-blue-900">Hello!</h1>
@@ -24,20 +24,20 @@ export default function Profile() {
           <div className="mb-8 md:mb-0 md:mr-8">
             <Image
               src={ProfilePic} // Replace this with the actual image URL
-              alt="CV Yoda"
+              alt="Waheed image"
               width={250}
               height={100}
               className="rounded-full"
             />
           </div>
 
-          <div className="p-6  text-black  w-full md:w-1/2 text-left">
-            <h2 className="text-3xl  flex items-center font-bold mb-4">
+          <div className="p-6  text-black max-lg:max-w-screen-lg w-full md:w-1/2 text-left">
+            <h2 className="md:text-3xl text-xl text-nowrap  flex items-center font-bold mb-4">
               Hello!
               <PiHandWavingDuotone color="#4E9FA1" />
               &nbsp;its Waheed
             </h2>
-            <div className="text-lg font-medium flex">
+            <div className="md:text-lg text-sm font-medium flex">
               <span>
                 A Full Stack Engineer (MERN){" "}
                 <IoLogoJavascript className="inline h-6 w-6" />| Mobile App
