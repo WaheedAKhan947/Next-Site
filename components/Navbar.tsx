@@ -12,9 +12,9 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-black-800 text-white p-4 shadow-md">
-      <div className="container mx-auto flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold">
+    <nav className="bg-black text-white p-4 shadow-md">
+      <div className="container mx-auto flex justify-center sm:gap-x-10 lg:gap-x-60 items-center">
+        <Link href="/" className="text-2xl font-bold text-nowrap">
           Waheed`s CV
         </Link>
 
