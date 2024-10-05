@@ -4,6 +4,18 @@ import DesignAnimation from "../assets/animations/DesigingAnime.json";
 // import AppAnimation from "../assets/animations/AppDevelopmentAnime.json";
 import SoftwareAnimation from "../assets/animations/SoftwareEngineeringAnime.json";
 import { Player } from "@lottiefiles/react-lottie-player";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaNodeJs,
+  FaGooglePlay,
+  FaAppStore
+} from "react-icons/fa";
+import { RiNextjsFill, RiNpmjsFill, RiTailwindCssFill } from "react-icons/ri";
+import { DiMongodb } from "react-icons/di";
+import { TbBrandReactNative } from "react-icons/tb";
 
 const Services = () => {
   return (
@@ -30,7 +42,15 @@ const Services = () => {
           </div>
           <div className="description flex flex-col lg:items-start items-center gap-y-4">
             <h4 className="text-3xl lg:text-5xl font-bold">App Development</h4>
-            <div className="icons"></div>
+            <div className="icons flex gap-5">
+              <TbBrandReactNative className="text-[#61dafb] text-3xl sm:text-5xl" />
+              <FaJs className="text-[#f7df1e] text-3xl sm:text-5xl" />
+              <FaCss3Alt className="text-[#1572b6] text-3xl sm:text-5xl"/>
+              <FaNodeJs className="text-[#47a248] text-3xl sm:text-5xl" />{" "}
+              <DiMongodb className="text-[#13aa52] text-3xl sm:text-5xl" />
+              <FaAppStore className="text-[#1572b6] text-3xl sm:text-5xl"/>
+              <FaGooglePlay className="text-[#00] text-3xl sm:text-5xl"/>
+            </div>
             <div className="details">
               <p className="lg:text-lg lg:text-start text-center text-sm">
                 ⚡ Developing cross-platform mobile applications using React
@@ -70,7 +90,15 @@ const Services = () => {
           </div>
           <div className="description flex flex-col lg:items-start items-center gap-y-4">
             <h4 className="text-3xl lg:text-5xl font-bold">Web Development</h4>
-            <div className="icons"></div>
+            <div className="icons flex justify-center items-center gap-5">
+              <FaHtml5 className="text-[#e34f26] text-3xl sm:text-5xl" />
+              <FaCss3Alt className="text-[#1572b6] text-3xl sm:text-5xl" />
+              <FaJs className="text-[#f7df1e] text-3xl sm:text-5xl" />
+              <FaReact className="text-[#61dafb] text-3xl sm:text-5xl" />
+              <RiNextjsFill className="text-black text-3xl sm:text-5xl" />
+              <RiTailwindCssFill className="text-[#1572b6] text-3xl sm:text-5xl" />
+              <RiNpmjsFill className="text-[#cb3837] text-3xl sm:text-5xl" />
+            </div>
             <div className="details">
               <p className="lg:text-lg lg:text-start text-center text-sm">
                 ⚡ Conducting user research to gather insights and define user
