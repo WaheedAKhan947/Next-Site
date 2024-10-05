@@ -12,15 +12,15 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-black text-white p-4 shadow-md">
-      <div className="container mx-auto flex justify-center sm:gap-x-10 lg:gap-x-60 items-center">
+    <nav className="bg-black text-white p-4 shadow-md ">
+      <div className="container mx-auto flex sm:justify-center justify-between sm:gap-x-10 lg:gap-x-60 items-center">
         <Link href="/" className="text-2xl font-bold text-nowrap">
-          Waheed`s CV
+        &lt;Waheed`s CV&gt;
         </Link>
 
         {/* Hamburger button for small screens */}
         <button
-          className="block md:hidden focus:outline-none"
+          className="block md:hidden ml-8 focus:outline-none"
           onClick={toggleMenu}
         >
           {isOpen ? (
