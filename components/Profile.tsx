@@ -37,7 +37,7 @@ export default function Profile() {
               <PiHandWavingDuotone color="#4E9FA1" />
               &nbsp;its Waheed
             </h2>
-            <div className="md:text-lg text-sm font-medium flex">
+            <div className="md:text-lg text-sm font-medium flex leading-loose">
               <span>
                 A Full Stack Engineer (MERN){" "}
                 <IoLogoJavascript className="inline h-6 w-6" />| Mobile App
@@ -83,7 +83,7 @@ export default function Profile() {
                   loop
                   src={GithubIcon} // Path to your Lottie JSON
                   style={{ height: "6vh", width: "4vw" }} // Adjust size for responsiveness
-                  className="md:h-12 md:w-12 h-8 w-8" // Add responsive classes
+                  className="md:h-12 md:w-12 h-12 w-12" // Add responsive classes
                 />
               </a>
               <a href="https://www.instagram.com/waheed_a_khan" target="blank">
@@ -99,7 +99,7 @@ export default function Profile() {
 
             <div>
               <a
-                href="../assets/CV/Waheed Ahmad Khan_CV.pdf"
+                href="/Waheed Ahmad Khan_CV.pdf"
                 download="Waheed_Resume.pdf"
               >
                 <Button variant="default" size="lg">
