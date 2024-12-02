@@ -99,7 +99,7 @@ export default function Profile() {
 
             <div>
               <a
-                href="/Waheed Ahmad Khan_CV.pdf"
+                href="/WaheedAhmadKhan_CV_JS.pdf"
                 download="Waheed_Resume.pdf"
               >
                 <Button variant="default" size="lg">
