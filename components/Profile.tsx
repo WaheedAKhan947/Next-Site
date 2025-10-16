@@ -99,7 +99,7 @@ export default function Profile() {
 
             <div>
               <a
-                href="/WaheedAhmadKhan_CV_JS.pdf"
+                href="/Waheed_ReactNativeCV.pdf"
                 download="Waheed_Resume.pdf"
               >
                 <Button variant="default" size="lg">
