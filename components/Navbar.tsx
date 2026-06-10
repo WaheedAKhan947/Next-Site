@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button"; // Assuming you're using ShadCN's UI button component
-import { X ,Menu } from "lucide-react"; // Lucide-react for icons
+import { X, Menu } from "lucide-react"; // Lucide-react for icons
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +15,7 @@ export default function Navbar() {
     <nav className="bg-black text-white p-4 shadow-md ">
       <div className="container mx-auto flex sm:justify-center justify-between sm:gap-x-10 lg:gap-x-60 items-center">
         <Link href="/" className="text-2xl font-bold text-nowrap">
-        &lt;Waheed`s CV&gt;
+          &lt;Waheed`s CV&gt;
         </Link>
 
         {/* Hamburger button for small screens */}
@@ -47,11 +47,11 @@ export default function Navbar() {
               Projects
             </Button>
           </Link>
-          <Link href="/blogs">
+          {/* <Link href="/blogs">
             <Button variant="outline" size="sm" className="text-white">
               Blogs
             </Button>
-          </Link>
+          </Link> */}
           <Link href="/contact">
             <Button variant="outline" size="sm" className="text-white">
               Contact
@@ -64,27 +64,47 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden flex flex-col gap-3 bg-black-700 text-white space-y-4 p-4">
           <Link href="/education" onClick={toggleMenu}>
-            <Button variant="outline" size="sm" className="text-white w-full text-left">
+            <Button
+              variant="outline"
+              size="sm"
+              className="text-white w-full text-left"
+            >
               Education
             </Button>
           </Link>
           <Link href="/experience" onClick={toggleMenu}>
-            <Button variant="outline" size="sm" className="text-white w-full text-left">
+            <Button
+              variant="outline"
+              size="sm"
+              className="text-white w-full text-left"
+            >
               Experience
             </Button>
           </Link>
           <Link href="/projects" onClick={toggleMenu}>
-            <Button variant="outline" size="sm" className="text-white w-full text-left">
+            <Button
+              variant="outline"
+              size="sm"
+              className="text-white w-full text-left"
+            >
               Projects
             </Button>
           </Link>
-          <Link href="/blogs" onClick={toggleMenu}>
-            <Button variant="outline" size="sm" className="text-white w-full text-left">
+          {/* <Link href="/blogs" onClick={toggleMenu}>
+            <Button
+              variant="outline"
+              size="sm"
+              className="text-white w-full text-left"
+            >
               Blogs
             </Button>
-          </Link>
+          </Link> */}
           <Link href="/contact" onClick={toggleMenu}>
-            <Button variant="outline" size="sm" className="text-white w-full text-left">
+            <Button
+              variant="outline"
+              size="sm"
+              className="text-white w-full text-left"
+            >
               Contact
             </Button>
           </Link>
