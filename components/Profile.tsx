@@ -39,11 +39,11 @@ export default function Profile() {
             </h2>
             <div className="md:text-lg text-sm font-medium flex leading-loose">
               <span>
-                A Full Stack Engineer (MERN){" "}
-                <IoLogoJavascript className="inline h-6 w-6" />| Mobile App
-                Developer (React Native){" "}
-                <FaMobileAlt className="inline h-6 w-6" />| Web Developer
-                (React/Next) <FaLaptopCode className="inline w-6 h-6" />
+                A Full Stack Engineer (MERN) | Mobile App Developer (React
+                Native) | Web Developer (React/Next) | Three JS Developer | 
+                <IoLogoJavascript className="inline h-6 w-6" />
+                <FaMobileAlt className="inline h-6 w-6" />
+                <FaLaptopCode className="inline w-6 h-6" />
               </span>
             </div>
             <div className="flex justify-between my-4 items-center flex-wrap">
