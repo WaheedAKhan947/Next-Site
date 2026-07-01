@@ -41,7 +41,7 @@ export default function Profile() {
               <span>
                 A Full Stack Engineer (MERN) | Mobile App Developer (React
                 Native) | Web Developer (React/Next) | Three JS Developer | 
-                <IoLogoJavascript className="inline h-6 w-6" />
+                <IoLogoJavascript className="inline h-6 w-6 ml-2" />
                 <FaMobileAlt className="inline h-6 w-6" />
                 <FaLaptopCode className="inline w-6 h-6" />
               </span>
