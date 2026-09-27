@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     google: "j9IbcoEA4BBllj25-WG3rsraFA2t1S09Ra2SF6qL7rM",
   },
   icons: {
-    icon: '/favicon.ico',
+    icon: "/favicon.ico",
   },
 };
 
@@ -21,7 +21,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head></head>
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3091777487981416"
+          crossOrigin="anonymous"
+        ></script>
+      </head>
       <body className="font-sans md:font-serif">
         <Navbar />
         {children}
